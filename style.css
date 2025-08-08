@@ -170,7 +170,7 @@
   body {
     font-size: var(--fs-400);
     color: var(--clr-blue-base);
-    background-color: var(--clr-gray-blue);
+    background-color: var(--background-accent-main);
   }
 
   h1,
@@ -184,11 +184,14 @@
     font-size: var(--fs-800);
   }
   a {
-    color: rgb(0, 0, 0);
+    color: var(--text-brand);
   }
   a:hover,
   a:focus-visible {
-    color: #093bff;
+    color: var(--text-high-contrast);
+  }
+  img {
+    border-radius: var(--border-radius-3);
   }
 }
 @layer layout {
@@ -251,6 +254,12 @@
   .background-accent-main {
     background-color: var(--background-accent-main);
   }
+  .section-title {
+    font-size: var(--font-size-heading-regular);
+  }
+  .text-center {
+    text-align: center;
+  }
   .background-extra-light {
     background-color: var(--background-extra-light);
   }
@@ -264,7 +273,7 @@
     background-color: var(--background-dark);
   }
   .background-extra-dark {
-    background-color: var(--background-extra-darkdark);
+    background-color: var(--background-extra-dark);
   }
   .font-size-heading-sm {
     font-size: var(--fs-700);
