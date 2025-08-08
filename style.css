@@ -245,6 +245,16 @@
 }
 
 @layer components {
+  .skip-to-main :not(:focus) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
   .site-header {
     padding-block: 1rem;
   }
@@ -265,7 +275,7 @@
     cursor: pointer;
     align-self: flex-start;
   }
-  .site-header__inner > img:first-child {
+  .site-header__inner > a > img:first-child {
     height: 140px;
     width: auto;
     flex-shrink: 0;
