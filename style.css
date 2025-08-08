@@ -1,0 +1,149 @@
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  [role="list"] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    min-block-size: 100vh;
+    line-height: 1.6;
+  }
+  h1,
+  h2,
+  h3,
+  button,
+  input,
+  label {
+    line-height: 1.1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  img,
+  picture {
+    max-inline-size: 100%;
+    display: block;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
+
+@layer base {
+  :root {
+    --clr-white: #ffffff;
+    --clr-blue-100: #8cb8ff;
+    --clr-blue-200: #74a5f3;
+    --clr-blue-300: #4c70ff;
+    --clr-blue-400: #3961ff;
+    --clr-blue-500: #2c56ff;
+    --clr-blue-600: #093bff;
+    --clr-blue-700: #0a32d2;
+    --clr-blue-800: #0021a5;
+    --clr-blue-base: #002156;
+    --clr-blue-900: #000c3e;
+    --clr-gold-500: #ffd700;
+    --clr-gray-blue: #76a9e4d7;
+    --clr-black: #222222;
+    --clr-bg: #77b6bf;
+    --ff-heading: "Outfit", sans-serif;
+    --ff-body: "Fira Sans", sans-serif;
+
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-500: 1.125rem;
+    --fs-600: 1.25rem;
+    --fs-700: 1.5rem;
+    --fs-800: 2rem;
+    --fs-900: 3.75rem;
+    --fs-1000: 3.75rem;
+
+    /* Text and utility variables */
+    --text-main: var(--clr-gray);
+    --text-high-contrast: var(--clr-white);
+    --text-brand: var(--clr-gold-500);
+    --text-brand-light: var(--clr-white);
+    --border-radius-1: 0.25rem;
+    --border-radius-2: 0.5rem;
+    --border-radius-3: 0.75rem;
+  }
+
+  @media (width > 760px) {
+    :root {
+      --fs-300: 0.875rem;
+      --fs-400: 1rem;
+      --fs-500: 1.25rem;
+      --fs-600: 1.5rem;
+      --fs-700: 2rem;
+      --fs-800: 3rem;
+      --fs-900: 5rem;
+      --fs-1000: 7.5rem;
+    }
+  }
+
+  html {
+    font-family: var(--ff-body);
+    line-height: 1.6;
+  }
+
+  body {
+    font-size: var(--fs-400);
+    color: var(--clr-blue-base);
+    background-color: var(--clr-gray-blue);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--ff-heading);
+    color: var(--clr-white);
+  }
+  h1 {
+    font-size: var(--fs-800);
+  }
+  a {
+    color: rgb(0, 0, 0);
+  }
+  a:hover,
+  a:focus-visible {
+    color: #093bff;
+  }
+}
