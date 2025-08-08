@@ -306,6 +306,26 @@
       border-radius: var(--border-radius-2);
     }
   }
+  .button {
+    display: inline-flex;
+    padding: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: var(--border-radius-2);
+    color: white;
+    text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px goldenrod, 0 0 30px gold;
+  }
+
+  .button:hover,
+  .button:focus-visible {
+    color: white;
+    text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 20px #1e90ff, 0 0 30px #1e90ff,
+      0 0 40px #87cefa;
+  }
+  .site-footer {
+    text-align: center;
+    padding: 1rem;
+  }
 }
 
 @layer utilities {
