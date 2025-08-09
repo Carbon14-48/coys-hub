@@ -12,6 +12,7 @@
     />
     <title>Tottenham Hotspur</title>
     <script src="/main.js" defer></script>
+    <script src="/player-filter.js" defer></script>
   </head>
   <body>
     <a href="#main" class="skip-to-main">Skip to main</a>
@@ -105,12 +106,12 @@
           </div>
         </div>
       </section>
-      <section class="section mushroom-guide">
+      <section class="section players-guide">
         <div class="wrapper">
           <h2 class="section-title">
             Get to Know your <span class="gold-glow"> Legends</span>
           </h2>
-          <select>
+          <select name="position" id="position">
             <option value="all">Position : All</option>
             <option value="ST">Striker</option>
             <option value="LW">Left Winger</option>
@@ -123,7 +124,7 @@
             <option value="CM">Central Midfielder</option>
             <option value="GK">GoalKeeper</option>
           </select>
-          <select>
+          <select name="altposition" id="altposition">
             <option value="all">Alternative Position : All</option>
             <option value="ST">Striker</option>
             <option value="LW">Left Winger</option>
