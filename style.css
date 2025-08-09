@@ -1,3 +1,10 @@
+@view-transition {
+  navigation: auto;
+}
+/*work only in google*/
+::view-transition-group(root) {
+  animation-duration: 2s;
+}
 @layer reset {
   *,
   *::before,
@@ -318,6 +325,10 @@
       background-color: var(--clr-sky-blue);
       padding: 2rem;
       border-radius: 0 0 0 var(--border-radius-3);
+
+      /* Hide by default on mobile */
+      display: none;
+
       ul {
         flex-direction: column;
       }
@@ -331,12 +342,18 @@
       }
     }
   }
+
   @media (width<760px) {
     [aria-controls="primary-nav"] {
       display: block;
     }
-    [aria-expanded="true"] + .primary-navigation {
+
+    [aria-expanded="false"] + .primary-navigation {
       display: none;
+    }
+
+    [aria-expanded="true"] + .primary-navigation {
+      display: block;
     }
   }
 
