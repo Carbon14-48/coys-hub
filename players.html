@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tottenham Hotspur</title>
+    <script src="/main.js" defer></script>
+  </head>
+  <body>
+    <a href="#main" class="skip-to-main">Skip to main</a>
+    <header class="site-header background-extra-light">
+      <div class="wrapper" data-width="wide">
+        <div class="site-header__inner">
+          <a href="index.html"
+            ><img src="/assets/logo.svg" alt="Tottenham Hotspur"
+          /></a>
+
+          <button aria-controls="primary-nav" aria-expanded="false">
+            <img src="/assets/hamburger.svg" alt="" />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav id="primary-nav" class="primary-navigation">
+            <ul role="list">
+              <li class="font-size-lg"><a href="#">Home</a></li>
+              <li class="font-size-lg"><a href="#">Hall of Fame</a></li>
+              <li class="font-size-lg"><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section
+        class="hero section flow background-extra-light"
+        data-padding="compact"
+      >
+        <div class="wrapper">
+          <h1 class="font-size-heading-lg">
+            Discover
+            <span class="text-high-contrast"
+              ><span class="text-brand"> Tottenham Hotspur</span>
+              <span class="gold-glow">Hall of Fame</span>
+            </span>
+          </h1>
+        </div>
+        <div class="wrapper" data-width="narrow">
+          <div class="flow">
+            <p class="font-size-lg text-high-contrast">
+              <em>
+                Celebrate the legends who have defined the spirit, skill, and
+                glory of Tottenham Hotspur
+                <span class="gold-glow"> throughout the decades. </span></em
+              >
+            </p>
+            <p class="font-size-lg text-high-contrast">
+              <em>
+                From record-breaking goals and unwavering leadership to dazzling
+                skill and creativity, each icon has left an unforgettable mark
+                on<span class="gold-glow"> the club’s history.</span></em
+              >
+            </p>
+            <p class="font-size-lg text-high-contrast">
+              <em>
+                Explore their stories, achievements, and lasting impact on the
+                game, and relive the moments that made them eternal heroes in
+
+                <span class="gold-glow">the hearts of Spurs fans.</span></em
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section background-extra-dark flow">
+        <div class="wrapper">
+          <div class="equal-columns" data-alignement="centred" data-gap="large">
+            <div>
+              <img src="/assets/where_to_look.jpg" alt="modric and berbatov" />
+            </div>
+            <div>
+              <h2 class="section-title text-brand">Where to Look</h2>
+              <p class="font-size-md text-high-contrast space-top">
+                Different eras of Spurs football have produced different types
+                of legends.
+              </p>
+              <p class="font-size-md text-high-contrast space-top">
+                From the golden years of historic triumphs to the modern era of
+                breathtaking performances, each period offers its own
+                unforgettable heroes.
+              </p>
+              <p class="font-size-md text-high-contrast space-top">
+                If you’re searching for a particular style of player, our Hall
+                of Fame guide below will help you find the icons who match your
+                vision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrapper">
+          <h2 class="section-title">Get to Know your Legends</h2>
+          <select>
+            <option value="all">Position : All</option>
+            <option value="ST">Striker</option>
+            <option value="LW">Left Winger</option>
+            <option value="RW">Right Winger</option>
+            <option value="CAM">Attacking Midfielder</option>
+            <option value="CDM">Defensing Midfielder</option>
+            <option value="CB">Center Back</option>
+            <option value="RB">Right Back</option>
+            <option value="LB">Left Back</option>
+            <option value="CM">Central Midfielder</option>
+            <option value="GK">GoalKeeper</option>
+          </select>
+          <select>
+            <option value="all">Alternative Position : All</option>
+            <option value="ST">Striker</option>
+            <option value="LW">Left Winger</option>
+            <option value="RW">Right Winger</option>
+            <option value="CAM">Attacking Midfielder</option>
+            <option value="CDM">Defensing Midfielder</option>
+            <option value="CB">Center Back</option>
+            <option value="RB">Right Back</option>
+            <option value="LB">Left Back</option>
+            <option value="CM">Central Midfielder</option>
+            <option value="GK">GoalKeeper</option>
+          </select>
+          <!---grid of players 12 cards-->
+          <div>
+            <div class="grid-auto-fit">
+              <div class="card">
+                <h3 class="card__title">Harry Kane</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="ST">Striker</li>
+                  <li data-alt="ST">Striker</li>
+                </ul>
+                <p>
+                  Record goalscorer and one of the most complete forwards of his
+                  generation.
+                </p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> Tottenham’s all-time leading
+                  scorer with 280 goals.
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Son Heung-min</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="LW">Left Winger</li>
+                  <li data-alt="ST">Striker</li>
+                </ul>
+                <p>
+                  Blistering pace, deadly finishing, and a constant fan
+                  favourite.
+                </p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> Modern-era assists leader.
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Jimmy Greaves</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="ST">Striker</li>
+                  <li data-alt="LW">Left Winger</li>
+                </ul>
+                <p>One of the most natural goalscorers in football history.</p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> Scored 266 goals for Spurs.
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Gareth Bale</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="RW">Right Winger</li>
+                  <li data-alt="LW">Left Winger</li>
+                </ul>
+                <p>
+                  Explosive pace, stunning goals, and unforgettable
+                  performances.
+                </p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> Twice named PFA Player of
+                  the Year.
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">David Ginola</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="LW">Left Winger</li>
+                  <li data-alt="CAM">Attacking Midfielder</li>
+                </ul>
+                <p>French flair and elegance that lit up White Hart Lane.</p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> PFA Player of the Year 1999.
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Ledley King</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="CB">Centre Back</li>
+                  <li data-alt="CDM">Defensive Midfielder</li>
+                </ul>
+                <p>One-club man known for his calm defending and leadership.</p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> Spurs captain and fan
+                  favourite.
+                </div>
+              </div>
+              <!-- Pat Jennings -->
+              <div class="card">
+                <h3 class="card__title">Pat Jennings</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="GK">Goalkeeper</li>
+                  <li data-alt="">—</li>
+                </ul>
+                <p>
+                  Legendary shot-stopper with incredible reflexes and presence.
+                </p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> Made over 590 appearances
+                  for Spurs.
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Glenn Hoddle</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="CM">Central Midfielder</li>
+                  <li data-alt="RW">Right Winger</li>
+                </ul>
+                <p>Midfield magician with vision, technique, and elegance.</p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> Spurs legend and England
+                  star.
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Jürgen Klinsmann</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="ST">Striker</li>
+                  <li data-alt="ST">Striker</li>
+                </ul>
+                <p>
+                  World-class finisher who made an instant impact in England.
+                </p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> Scored 30 goals in his first
+                  Spurs season.
+                </div>
+              </div>
+              <!-- Dimitar Berbatov -->
+              <div class="card">
+                <h3 class="card__title">Dimitar Berbatov</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="ST">Striker</li>
+                  <li data-alt="ST">Striker</li>
+                </ul>
+                <p>Effortless style, sublime touch, and clinical finishing.</p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> League Cup winner with Spurs
+                  in 2008.
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Luka Modrić</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="CM">Central Midfielder</li>
+                  <li data-alt="CAM">Attacking Midfielder</li>
+                </ul>
+                <p>
+                  World-class playmaker known for vision, passing, and control
+                  in midfield.
+                </p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> Key player who dazzled Spurs
+                  before winning global honours.
+                </div>
+              </div>
+              <!-- Robbie Keane -->
+              <div class="card">
+                <h3 class="card__title">Robbie Keane</h3>
+                <ul class="tag-list" role="list">
+                  <li data-primary="ST">Striker</li>
+                  <li data-alt="ST">Striker</li>
+                </ul>
+                <p>
+                  Energetic forward with sharp movement and goal-scoring
+                  instinct.
+                </p>
+                <div class="card__note">
+                  <strong>Important notes:</strong> Scored over 120 goals for
+                  Spurs.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---faq-->
+      <section class="background-light">
+        <div class="wrapper" data-width="wide">
+          <div class="card">
+            <img src="./assets/kane_faq.jpg" alt="kane" />
+            <h3 class="card__title">
+              Who has the most goals for Tottenham Hotspur?
+            </h3>
+            <p>
+              Harry Kane holds the all-time record with 280 goals in competitive
+              matches, making him the club’s most prolific scorer ever.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assets/son_faq.jpg" alt="son bowing" />
+            <h3 class="card__title">
+              Who has the most assists for Tottenham Hotspur?
+            </h3>
+            <p>
+              With 101 assists Son Heung-min leads the modern-era charts for
+              assists, combining pace, precision, and vision to set up countless
+              goals for his teammates
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assets/son_faq2.jpg" alt="son kissing" />
+            <h3 class="card__title">Who is the fans’ favourite?</h3>
+            <p>
+              Son Heung-min — loved for his skill, smile, and relentless work
+              rate — is adored by Spurs fans around the globe.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assets/trophy.jpg" alt="trophies cabinet" />
+            <h3 class="card__title">Is Tottenham truly a trophyless club?</h3>
+            <p>
+              Not at all. Spurs have a proud history, including two league
+              titles, eight FA Cups, four League Cups, and two European trophies
+              — but they’ve been chasing their next major honour for quite some
+              time.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer background-extra-dark">
+      <p class="text-high-contrast gold-glow font-size-md">
+        Come On You Spurs!
+      </p>
+      <a class="text-brand" href="mailto: contact@tottenhamfans.com">
+        contact@tottenhamfans.com</a
+      >
+    </footer>
+  </body>
+</html>

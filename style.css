@@ -217,6 +217,11 @@
       --equal-columns-vertical-alignment: center;
     }
   }
+  .grid-auto-fit {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
 
   .section {
     --padding: 3.75rem;
@@ -354,10 +359,73 @@
     padding: 1rem;
     background-color: var(--background-dark);
     border-radius: var(--border-radius-3);
+    margin-top: 1rem;
     img {
       border-radius: var(--border-radius-2);
     }
   }
+  .card > * {
+    margin-block: 1rem;
+  }
+  .tag-list {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    li {
+      padding: 0rem 0.25rem;
+      background-color: var(--tag-bg, red);
+      font-family: var(--ff-heading);
+      color: var(--text-high-contrast);
+      font-size: var(--font-size-sm);
+    }
+    [data-primary="ST"],
+    [data-alt="ST"] {
+      background-color: #ffcccc; /* soft red */
+      color: #800000; /* dark red */
+    }
+
+    [data-primary="LW"],
+    [data-alt="LW"] {
+      background-color: #fff0b3; /* soft yellow */
+      color: #b38600; /* golden brown */
+    }
+
+    [data-primary="RW"],
+    [data-alt="RW"] {
+      background-color: #cce5ff; /* soft blue */
+      color: #004080; /* navy blue */
+    }
+    [data-primary="CAM"],
+    [data-alt="CAM"] {
+      background-color: #e6ccff; /* soft purple */
+      color: #4b0082; /* indigo */
+    }
+    [data-primary="CDM"],
+    [data-alt="CDM"] {
+      background-color: #d9f2d9; /* soft green */
+      color: #2e7d32; /* forest green */
+    }
+    [data-primary="CB"],
+    [data-alt="CB"] {
+      background-color: #f2f2f2; /* light gray */
+      color: #555555; /* dark gray */
+    }
+
+    /* Central Midfielder (CM) */
+    [data-primary="CM"],
+    [data-alt="CM"] {
+      background-color: #ffd9b3; /* soft orange */
+      color: #b35900; /* burnt orange */
+    }
+
+    /* Goalkeeper (GK) */
+    [data-primary="GK"],
+    [data-alt="GK"] {
+      background-color: #d9e6f2; /* soft steel blue */
+      color: #003366; /* deep blue */
+    }
+  }
+
   .button {
     display: inline-flex;
     padding: 0.5rem;
@@ -466,5 +534,17 @@
     color: white;
     text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px goldenrod, 0 0 30px gold,
       0 0 40px goldenrod;
+  }
+
+  .space-top {
+    padding-top: 1.5rem;
+  }
+
+  .space-bottom {
+    padding-bottom: 1.5rem;
+  }
+  .card__title {
+    color: var(--text-brand);
+    font-size: var(--font-size-lg);
   }
 }
