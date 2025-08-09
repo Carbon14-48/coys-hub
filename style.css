@@ -360,12 +360,34 @@
     background-color: var(--background-dark);
     border-radius: var(--border-radius-3);
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
     img {
       border-radius: var(--border-radius-2);
     }
   }
+  .mushroom-guide {
+    background-color: var(--clr-navy-100);
+  }
+  .wrapper > select {
+    background-color: skyblue;
+    border: 1px solid gold;
+    border-radius: 10% 10% 10% 10%;
+    margin-block: 1rem;
+    font-weight: 600;
+    text-decoration: wavy;
+    padding: 1rem;
+  }
+  .mushroom-guide .card__note {
+    margin-block-start: auto;
+    padding: 0.5rem;
+    color: #011b81;
+    background-color: skyblue;
+    border-radius: 5% 5% 5% 5%;
+  }
   .card > * {
     margin-block: 1rem;
+    color: white;
   }
   .tag-list {
     display: flex;
@@ -380,49 +402,46 @@
     }
     [data-primary="ST"],
     [data-alt="ST"] {
-      background-color: #ffcccc; /* soft red */
-      color: #800000; /* dark red */
+      background-color: #ffcccc;
+      color: #800000;
     }
 
     [data-primary="LW"],
     [data-alt="LW"] {
-      background-color: #fff0b3; /* soft yellow */
-      color: #b38600; /* golden brown */
+      background-color: #fff0b3;
+      color: #b38600;
     }
 
     [data-primary="RW"],
     [data-alt="RW"] {
-      background-color: #cce5ff; /* soft blue */
-      color: #004080; /* navy blue */
+      background-color: #cce5ff;
+      color: #004080;
     }
     [data-primary="CAM"],
     [data-alt="CAM"] {
-      background-color: #e6ccff; /* soft purple */
-      color: #4b0082; /* indigo */
+      background-color: #e6ccff;
+      color: #4b0082;
     }
     [data-primary="CDM"],
     [data-alt="CDM"] {
-      background-color: #d9f2d9; /* soft green */
-      color: #2e7d32; /* forest green */
+      background-color: #d9f2d9;
+      color: #2e7d32;
     }
     [data-primary="CB"],
     [data-alt="CB"] {
-      background-color: #f2f2f2; /* light gray */
-      color: #555555; /* dark gray */
+      background-color: #f2f2f2;
+      color: #555555;
     }
 
-    /* Central Midfielder (CM) */
     [data-primary="CM"],
     [data-alt="CM"] {
-      background-color: #ffd9b3; /* soft orange */
-      color: #b35900; /* burnt orange */
+      background-color: #ffd9b3;
+      color: #b35900;
     }
-
-    /* Goalkeeper (GK) */
     [data-primary="GK"],
     [data-alt="GK"] {
-      background-color: #d9e6f2; /* soft steel blue */
-      color: #003366; /* deep blue */
+      background-color: #d9e6f2;
+      color: #003366;
     }
   }
 
